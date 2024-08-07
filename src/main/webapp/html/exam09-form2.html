@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="result.html" >
+    <fieldset>
+        <legend>이름입력하기</legend>
+        <div>
+            <label for="user_name">이름 : </label>
+            <input type="text" name="user_name" id="user_name" />
+        </div>
+        <br/>
+        <div>
+            <input type="submit" value="입력완료" />
+            <input type="reset" value="초기화" />
+            <input type="button" value="입력완료"
+                   onclick="javascript:location.href='result.html'"/>
+            <input type="image" src="../image/ok.png" width="30" height="30" alt="OK" /> <!--자동으로 submit -->
+            <input type="image" src="../image/ok.png" width="30" height="30" alt="OK" onclick="return false;" /> <!--자동으로 submit 해제 -->
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
+<!--
+submit ~ action
+- <form>태그 안에 있는 입력상자의 데이터를 들고 페이지 이동
+
+* button
+button ~ onclick on~할때라고 해석하면 됨
+<inpt type="button" />
+<button  />
+
+* 이미지
+<img src="" alt="" />
+<input type="image" src="" alt="" />
+
+페이지 이동
+1.Get
+=> default
+=> Query String(주소표시줄)통해 이동
+
+2.Post
+=>클라이언트가 post로 요청했을 때
+
+http://localhost:8080/HTML5/html/exam09-form2.html 요청
+
+http://localhost:8080/HTML5/html/result.html?변수 = 값 & 변수 = 값 & 변수 = 값
+http://localhost:8080/HTML5/html/result.html?user_name = 홍길동 (요청페이지에서 입력하면 네임속성을 갖고감)
+
+http://localhost:8080/html/result.html?user_name=%ED%99%8D%EA%B8%B8%EB%8F%99
+-->
