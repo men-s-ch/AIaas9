@@ -1,0 +1,716 @@
+{\rtf1\ansi\ansicpg949\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset129 AppleSDGothicNeo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red253\green217\blue76;\red28\green26\blue40;\red54\green250\blue243;
+\red31\green235\blue247;\red252\green118\blue44;\red167\green161\blue162;\red244\green0\blue157;\red245\green103\blue95;
+\red113\green118\blue175;\red222\green240\blue249;\red48\green201\blue250;}
+{\*\expandedcolortbl;;\csgenericrgb\c99216\c85098\c29804;\csgenericrgb\c10980\c10196\c15686;\csgenericrgb\c21176\c98039\c95294;
+\csgenericrgb\c12157\c92157\c96863;\csgenericrgb\c98824\c46275\c17255;\csgenericrgb\c65490\c63137\c63529;\csgenericrgb\c95686\c0\c61569;\csgenericrgb\c96078\c40392\c37255;
+\csgenericrgb\c44314\c46275\c68627;\csgenericrgb\c87059\c94118\c97647;\csgenericrgb\c18824\c78824\c98039;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\i\fs24 \cf2 \cb3 select \cf4 months_between
+\f1\i0 \cf5 (\cf6 '95 -10-21'\cf7 , \cf6 '94-10-20'\cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 WIDTH_BUCKET
+\f1\i0 \cf5 (\cf9 74\cf7 , \cf9 0\cf7 , \cf9 100\cf7 , \cf9 10\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'c1\'f6\'c1\'a4\'b5\'c8
+\f0\i  
+\f2\i0 \'b9\'fc\'c0\'a7
+\f0\i  
+\f2\i0 \'c0\'a7\'c4\'a1\'c3\'a3\'b1\'e2
+\f0\i \
+\cf2 select \cf4 rtrim
+\f1\i0 \cf5 (\cf6 'test   '\cf5 )\cf1 || \cf6 'exam' 
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ; 
+\f0\i \cf10 --
+\f2\i0 \'b0\'f8\'b9\'e9\'c1\'a6\'b0\'c5
+\f0\i \
+\cf2 select \cf4 sysdate \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf6 'YYYY"
+\f2 \'b3\'e2
+\f1 " MM"
+\f2 \'bf\'f9
+\f1 " DD"
+\f2 \'c0\'cf
+\f1 "'\cf5 ) 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bf\'c0\'b4\'c3\'b3\'af\'c2\'a5
+\f1  
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf6 'HH"
+\f2 \'bd\'c3
+\f1 " MI"
+\f2 \'ba\'d0
+\f1 " SS"
+\f2 \'c3\'ca
+\f1 "'\cf5 ) 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bf\'c0\'b4\'c3\'b3\'af\'c2\'a5
+\f1  
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf6 'HH24"
+\f2 \'bd\'c3
+\f1 " MI"
+\f2 \'ba\'d0
+\f1 " SS"
+\f2 \'c3\'ca
+\f1 "'\cf5 ) 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bf\'c0\'b4\'c3\'b3\'af\'c2\'a5
+\f1  
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 add_months
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf9 7\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'b3\'af\'c2\'a5\'bf\'a1
+\f0\i  
+\f2\i0 \'b4\'de\'bc\'f6
+\f0\i  
+\f2\i0 \'b4\'f5\'c7\'cf\'b1\'e2
+\f0\i \
+\
+\cf2 select \cf4 last_day
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'c7\'d8\'b4\'e7\'b4\'de\'c0\'c7
+\f0\i  
+\f2\i0 \'b8\'b6\'c1\'f6\'b8\'b7
+\f0\i  
+\f2\i0 \'b3\'af
+\f0\i \
+\cf2 select \cf4 last_day
+\f1\i0 \cf5 (\cf6 '2004-02-01'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 last_day
+\f1\i0 \cf5 (\cf6 '2005-02-01'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf5 (
+\f0\i \cf4 last_day
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf5 )\cf1 -
+\f0\i \cf4 sysdate
+\f1\i0 \cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'bf\'c0\'b4\'c3\'ba\'ce\'c5\'cd
+\f0\i  
+\f2\i0 \'c0\'cc\'b9\'f8
+\f0\i  
+\f2\i0 \'b4\'de
+\f0\i  
+\f2\i0 \'b8\'bb\'b1\'ee\'c1\'f6
+\f0\i  
+\f2\i0 \'c3\'d1
+\f0\i  
+\f2\i0 \'b3\'b2\'c0\'ba
+\f0\i  
+\f2\i0 \'b3\'af\'bc\'f6\'b8\'a6
+\f0\i  
+\f2\i0 \'b1\'b8\'c7\'cf\'bd\'c3\'bf\'c0
+\f0\i \
+\
+\cf2 select \cf4 round
+\f1\i0 \cf5 (
+\f0\i \cf4 months_between
+\f1\i0 \cf5 (\cf6 '95-10-21'\cf7 , \cf6 '94-10-20'\cf5 )\cf7 ,\cf9 0\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ; 
+\f0\i \cf10 --
+\f2\i0 \'b5\'ce
+\f0\i  
+\f2\i0 \'b3\'af\'c2\'a5
+\f0\i  
+\f2\i0 \'bb\'e7\'c0\'cc\'c0\'c7
+\f0\i  
+\f2\i0 \'b4\'de
+\f0\i  
+\f2\i0 \'bc\'f6
+\f0\i \
+\
+\cf2 select 
+\f1\i0 \cf12 LAST_NAME\cf7 , 
+\f0\i \cf4 to_char
+\f1\i0 \cf5 (\cf12 SALARY\cf7 ,\cf6 'L99,999,00'\cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 where 
+\f1\i0 \cf12 LAST_NAME \cf1 = \cf6 'King'\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 to_date
+\f1\i0 \cf5 (\cf6 '97/9/30'\cf7 , \cf6 'YY-MM-DD'\cf5 )\cf7 , \cf6 'YYYY-MON-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 to_date
+\f1\i0 \cf5 (\cf6 '97/9/30'\cf7 , \cf6 'RR-MM-DD'\cf5 )\cf7 , \cf6 'RRRR-MON-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 to_date
+\f1\i0 \cf5 (\cf6 '17/9/30'\cf7 , \cf6 'YY-MM-DD'\cf5 )\cf7 , \cf6 'YYYY-MON-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 to_date
+\f1\i0 \cf5 (\cf6 '17/9/30'\cf7 , \cf6 'RR-MM-DD'\cf5 )\cf7 , \cf6 'RRRR-MON-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 LAST_NAME\cf7 ,
+\f0\i \cf4 to_char
+\f1\i0 \cf5 (\cf12 HIRE_DATE\cf7 ,\cf6 'dd-mon-yyyy'\cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 where 
+\f1\i0 \cf12 HIRE_DATE \cf1 > 
+\f0\i \cf4 TO_DATE
+\f1\i0 \cf5 (\cf6 '1995-01-01'\cf7 , \cf6 'YYYY-MM-DD'\cf5 )\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 LAST_NAME\cf7 , \cf12 HIRE_DATE 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 where 
+\f1\i0 \cf12 HIRE_DATE\cf1 = \cf6 '96/02/17'\cf7 ;\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 LAST_NAME\cf7 , \cf12 HIRE_DATE 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 where 
+\f1\i0 \cf12 HIRE_DATE\cf1 = \cf6 '96/2/17'\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 TO_CHAR
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf6 'YYYY-MM-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 TO_CHAR
+\f1\i0 \cf5 (
+\f0\i \cf4 sysdate
+\f1\i0 \cf7 , \cf6 'YYYY-fmMM-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;
+\f0\i \cf10 --fm
+\f2\i0 \'c0\'ba
+\f0\i  0
+\f2\i0 \'c0\'bb
+\f0\i  
+\f2\i0 \'c7\'a5\'bd\'c3\'c7\'cf\'c1\'f6
+\f0\i  
+\f2\i0 \'be\'ca\'c0\'bd
+\f0\i \
+\
+\cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 TO_DATE
+\f1\i0 \cf5 (\cf6 '2011-03-01'\cf7 ,\cf6 'YYYY-MM-DD'\cf5 )\cf7 , \cf6 'YYYY-MM-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 TO_DATE
+\f1\i0 \cf5 (\cf6 '2011-03-01'\cf7 ,\cf6 'YYYY-MM-DD'\cf5 )\cf7 , \cf6 'YYYY-fmMM-DD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+
+\f0\i \cf2 select \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 TO_DATE
+\f1\i0 \cf5 (\cf6 '2011-03-01'\cf7 ,\cf6 'YYYY-MM-DD'\cf5 )\cf7 , \cf6 'YYYY-fmMM-fmDD'\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 dual\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 max
+\f1\i0 \cf5 (\cf12 SALARY\cf5 )\cf7 ,
+\f0\i \cf10 --
+\f2\i0 \'c3\'d6\'b4\'f1\'b0\'aa
+\f0\i \
+       \cf4 min
+\f1\i0 \cf5 (\cf12 SALARY\cf5 )\cf7 ,
+\f0\i \cf10 --
+\f2\i0 \'c3\'d6\'bc\'da\'b0\'aa
+\f0\i \
+       \cf4 trunc
+\f1\i0 \cf5 (
+\f0\i \cf4 avg
+\f1\i0 \cf5 (\cf12 SALARY\cf5 )\cf7 , \cf9 0\cf5 )\cf7 ,
+\f0\i \cf10 --
+\f2\i0 \'c6\'f2\'b1\'d5
+\f0\i \
+       \cf4 to_char
+\f1\i0 \cf5 (
+\f0\i \cf4 sum
+\f1\i0 \cf5 (\cf12 SALARY\cf5 )\cf7 ,\cf6 'L9,999,999'\cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'c7\'d5
+\f0\i \
+\
+\cf2 select \cf4 count
+\f1\i0 \cf5 (
+\f0\i \cf4 *
+\f1\i0 \cf5 )\cf1 -
+\f0\i \cf4 count
+\f1\i0 \cf5 (\cf12 PHONE_NUMBER\cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;\
+
+\f0\i \cf2 select \cf4 count
+\f1\i0 \cf5 (
+\f0\i \cf4 *
+\f1\i0 \cf5 ) 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 where 
+\f1\i0 \cf12 PHONE_NUMBER 
+\f0\i \cf2 is null
+\f1\i0 \cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 DEPARTMENT_ID 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ; 
+\f0\i \cf10 --
+\f2\i0 \'b0\'a2
+\f0\i  
+\f2\i0 \'ba\'ce\'bc\'ad\'be\'c6\'c0\'cc\'b5\'f0
+\f0\i  
+\f2\i0 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'aa
+\f0\i \
+\cf2 select \cf4 count
+\f1\i0 \cf5 (\cf12 DEPARTMENT_ID\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'ba\'ce\'bc\'ad\'be\'c6\'c0\'cc\'b5\'f0\'c0\'c7
+\f0\i  
+\f2\i0 \'b0\'b3\'bc\'f6
+\f0\i \
+\cf2 select \cf4 count
+\f1\i0 \cf5 (
+\f0\i \cf4 *
+\f1\i0 \cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'b7\'b9\'c4\'da\'b5\'e5\'c0\'c7
+\f0\i  
+\f2\i0 \'b0\'b3\'bc\'f6
+\f0\i \
+\cf2 select \cf4 count
+\f1\i0 \cf5 (
+\f0\i \cf2 distinct 
+\f1\i0 \cf12 DEPARTMENT_ID\cf5 )
+\f0\i \cf2 from  
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'ba\'ce\'bc\'ad\'be\'c6\'c0\'cc\'b5\'f0
+\f0\i  
+\f2\i0 \'c1\'df\'ba\'b9\'c0\'bb
+\f0\i  
+\f2\i0 \'c1\'a6\'bf\'dc\'c7\'d1
+\f0\i  
+\f2\i0 \'b0\'b3\'bc\'f6
+\f0\i \
+\cf2 select \cf4 count
+\f1\i0 \cf5 (
+\f0\i \cf2 distinct \cf4 nvl
+\f1\i0 \cf5 (\cf12 DEPARTMENT_ID\cf7 , \cf9 0\cf5 ))
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --null
+\f2\i0 \'b0\'aa\'c0\'bb
+\f0\i  0
+\f2\i0 \'c0\'b8\'b7\'ce
+\f0\i  
+\f2\i0 \'b9\'d9\'b2\'d9\'b0\'ed
+\f0\i  
+\f2\i0 \'b0\'b9\'bc\'f6
+\f0\i \
+\cf2 select distinct \cf4 nvl
+\f1\i0 \cf5 (\cf12 DEPARTMENT_ID\cf7 ,\cf9 0\cf5 )
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;
+\f0\i \cf10 --
+\f2\i0 \'c1\'df\'ba\'b9\'c0\'bb
+\f0\i  
+\f2\i0 \'c1\'a6\'bf\'dc\'c7\'cf\'b0\'ed
+\f0\i  null
+\f2\i0 \'b0\'aa\'c0\'bb
+\f0\i  0
+\f2\i0 \'c0\'b8\'b7\'ce
+\f0\i  
+\f2\i0 \'b9\'d9\'b2\'db
+\f0\i  
+\f2\i0 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'aa
+\f0\i \
+\
+\cf2 select 
+\f1\i0 \cf12 JOB_ID \cf7 ,
+\f0\i \cf4 decode
+\f1\i0 \cf5 (\cf12 JOB_ID\cf7 ,\
+               \cf6 '16'\cf7 ,\cf6 'Sales Dept'\cf7 ,\
+               \cf6 '13'\cf7 ,\cf6 'Sales Dept'\cf7 ,\
+               \cf6 'Another'\cf5 )\cf11 "
+\f2 \'ba\'d0\'b7\'f9
+\f1 " 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES 
+\f0\i \cf2 order by 
+\f1\i0 \cf8 2\cf7 ;\
+\
+
+\f0\i \cf2 SELECT 
+\f1\i0 \cf12 JOB_ID\cf7 ,\
+       
+\f0\i \cf2 CASE 
+\f1\i0 \cf12 JOB_ID\
+           
+\f0\i \cf2 WHEN 
+\f1\i0 \cf9 16 
+\f0\i \cf2 THEN 
+\f1\i0 \cf6 'Sales Dept'\
+           
+\f0\i \cf2 WHEN 
+\f1\i0 \cf9 13 
+\f0\i \cf2 THEN 
+\f1\i0 \cf6 'Sales Dept'\
+           
+\f0\i \cf2 ELSE 
+\f1\i0 \cf6 'Another'\
+           
+\f0\i \cf2 END AS 
+\f1\i0 \cf11 "
+\f2 \'ba\'d0\'b7\'f9
+\f1 "\
+
+\f0\i \cf2 FROM 
+\f1\i0 \cf8 EMPLOYEES\
+
+\f0\i \cf2 ORDER BY 
+\f1\i0 \cf11 "
+\f2 \'ba\'d0\'b7\'f9
+\f1 "\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 JOB_ID\cf7 ,\
+       
+\f0\i \cf2 case\
+           when 
+\f1\i0 \cf12 JOB_ID \cf1 = \cf9 16 
+\f0\i \cf2 then 
+\f1\i0 \cf6 'Sales Dept'\
+           
+\f0\i \cf2 when 
+\f1\i0 \cf12 JOB_ID \cf1 = \cf9 12 
+\f0\i \cf2 then 
+\f1\i0 \cf6 'Sales Dept'\
+           
+\f0\i \cf2 else 
+\f1\i0 \cf6 'Another'\
+       
+\f0\i \cf2 end 
+\f1\i0 \cf11 "
+\f2 \'ba\'d0\'b7\'f9
+\f1 "\
+
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\
+
+\f0\i \cf2 order by 
+\f1\i0 \cf8 2\cf7 ;\
+\
+\
+\
+
+\f0\i \cf2 SELECT 
+\f1\i0 \cf12 EMPLOYEE_ID 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bb\'e7\'bf\'f8\'b9\'f8\'c8\'a3
+\f1 \cf7 ,\
+       \cf12 LAST_NAME 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bb\'e7\'bf\'f8\'b8\'ed
+\f1 \cf7 ,\
+       
+\f0\i \cf2 CASE\
+           WHEN 
+\f1\i0 \cf12 SALARY \cf1 < \cf9 10000 
+\f0\i \cf2 THEN 
+\f1\i0 \cf6 '
+\f2 \'c3\'ca\'b1\'de
+\f1 '\
+           
+\f0\i \cf2 WHEN 
+\f1\i0 \cf12 SALARY \cf1 < \cf9 20000 
+\f0\i \cf2 THEN 
+\f1\i0 \cf6 '
+\f2 \'c1\'df\'b1\'de
+\f1 '\
+           
+\f0\i \cf2 ELSE 
+\f1\i0 \cf6 '
+\f2 \'b0\'ed\'b1\'de
+\f1 '\
+           
+\f0\i \cf2 END AS 
+\f1\i0 \cf11 "
+\f2 \'b1\'b8\'ba\'d0
+\f1 "\
+
+\f0\i \cf2 FROM 
+\f1\i0 \cf8 EMPLOYEES\
+
+\f0\i \cf2 ORDER BY 
+\f1\i0 \cf8 3\cf7 ,\cf8 2\cf7 ;\
+\
+
+\f0\i \cf2 select \cf4 rank
+\f1\i0 \cf5 (\cf9 3000\cf5 ) 
+\f0\i \cf2 within group 
+\f1\i0 \cf5 (
+\f0\i \cf2 order by 
+\f1\i0 \cf12 salary 
+\f0\i \cf2 desc
+\f1\i0 \cf5 ) \cf11 "rank" 
+\f0\i \cf2 from 
+\f1\i0 \cf8 employees\cf7 ;\
+
+\f0\i \cf10 --rank within group 
+\f2\i0 \'b0\'fa
+\f0\i  rank over
+\f2\i0 \'c0\'c7
+\f0\i  
+\f2\i0 \'c2\'f7\'c0\'cc\'b4\'c2
+\f0\i  
+\f2\i0 \'c7\'d8\'b4\'e7
+\f0\i  rank
+\f2\i0 \'c0\'c7
+\f0\i  
+\f2\i0 \'bc\'f8\'c0\'a7\'b8\'a6
+\f0\i  
+\f2\i0 \'c3\'a3\'be\'c6\'b3\'bb\'b4\'c2
+\f0\i  
+\f2\i0 \'b0\'cd
+\f0\i  
+\f2\i0 \'b0\'fa
+\f0\i  
+\f2\i0 \'c0\'fc\'c3\'bc\'bc\'f8\'c0\'a7\'b8\'a6
+\f0\i  
+\f2\i0 \'b3\'aa\'bf\'ad\'c7\'cf\'b4\'c2
+\f0\i  
+\f2\i0 \'c2\'f7\'c0\'cc
+\f0\i \
+\cf2 select 
+\f1\i0 \cf12 EMPLOYEE_ID\cf7 , \cf12 SALARY\cf7 , 
+\f0\i \cf4 rank
+\f1\i0 \cf5 () 
+\f0\i \cf2 over 
+\f1\i0 \cf5 (
+\f0\i \cf2 order by 
+\f1\i0 \cf12 SALARY 
+\f0\i \cf2 desc
+\f1\i0 \cf5 ) \cf11 "rank" 
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 EMPLOYEE_ID\cf7 ,\
+       \cf12 SALARY\cf7 ,\
+       \cf12 DEPARTMENT_ID\cf7 ,\
+       
+\f0\i \cf4 FIRST_VALUE
+\f1\i0 \cf5 (\cf12 SALARY\cf5 ) 
+\f0\i \cf2 over 
+\f1\i0 \cf5 (
+\f0\i \cf2 partition by 
+\f1\i0 \cf12 DEPARTMENT_ID 
+\f0\i \cf2 order by 
+\f1\i0 \cf12 SALARY 
+\f0\i \cf2 desc
+\f1\i0 \cf5 )\
+            \cf11 "highsal_deptID"\
+
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;\
+\
+
+\f0\i \cf2 select 
+\f1\i0 \cf12 EMPLOYEE_ID\cf7 ,\
+       \cf12 LAST_NAME\cf7 ,\
+       \cf12 SALARY\cf7 ,\
+       \cf12 DEPARTMENT_ID\cf7 ,\
+       
+\f0\i \cf4 row_number
+\f1\i0 \cf5 () 
+\f0\i \cf2 over 
+\f1\i0 \cf5 (
+\f0\i \cf2 PARTITION BY 
+\f1\i0 \cf12 DEPARTMENT_ID 
+\f0\i \cf2 order by 
+\f1\i0 \cf12 SALARY 
+\f0\i \cf2 DESC
+\f1\i0 \cf5 ) \cf11 rnum\
+
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;\
+\
+
+\f0\i \cf10 --
+\f2\i0 \'bb\'e7\'bf\'f8\'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1\'bc\'ad
+\f0\i  
+\f2\i0 \'bb\'e7\'bf\'f8\'b9\'f8\'c8\'a3
+\f0\i , 
+\f2\i0 \'c0\'cc\'b8\'a7
+\f0\i , 
+\f2\i0 \'b1\'de\'bf\'a9
+\f0\i , 
+\f2\i0 \'bf\'ac\'ba\'c0\'c0\'bb
+\f0\i  
+\f2\i0 \'c3\'e2\'b7\'c2\'c7\'cf\'bd\'c3\'bf\'c0
+\f0\i \
+--
+\f2\i0 \'c1\'b6\'b0\'c7
+\f0\i 1)
+\f2\i0 \'bf\'ac\'ba\'c0\'c0\'ba
+\f0\i  $ 
+\f2\i0 \'c7\'a5\'bd\'c3\'bf\'cd
+\f0\i  
+\f2\i0 \'bc\'bc\'c0\'da\'b8\'ae\'b8\'b6\'b4\'d9
+\f0\i  
+\f2\i0 \'c4\'de\'b8\'b6\'b8\'a6
+\f0\i  
+\f2\i0 \'bb\'e7\'bf\'eb\'c7\'cf\'bd\'c3\'bf\'c0
+\f0\i \
+--
+\f2\i0 \'c1\'b6\'b0\'c7
+\f0\i 2)
+\f2\i0 \'bf\'ac\'ba\'c0
+\f0\i  = 
+\f2\i0 \'b1\'de\'bf\'a9
+\f0\i  * 12\
+\cf2 select 
+\f1\i0 \cf12 EMPLOYEE_ID\cf7 ,\
+       \cf12 LAST_NAME\cf7 ,\
+       \cf12 SALARY\cf7 ,\
+       \cf6 '$'\cf1 ||
+\f0\i \cf4 to_char
+\f1\i0 \cf5 (\cf12 salary\cf1 *\cf9 12\cf7 ,\cf6 'FM999,999'\cf5 ) 
+\f0\i \cf2 as 
+\f2\i0 \cf11 \'bf\'ac\'ba\'c0
+\f1 \
+
+\f0\i \cf2 from 
+\f1\i0 \cf8 EMPLOYEES\cf7 ;\
+\
+\
+Partition by 
+\f2 \'bf\'cd
+\f1  group by\
+
+\f2 \'c0\'cc
+\f1  
+\f2 \'b5\'d1\'c0\'ba
+\f1  
+\f2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f1  \'93
+\f2 \'b1\'d7\'b7\'ec\'c8\'ad
+\f1 \'94
+\f2 \'c7\'d1\'b4\'d9\'b4\'c2
+\f1  
+\f2 \'b0\'f8\'c5\'eb\'c1\'a1\'c0\'cc
+\f1  
+\f2 \'c0\'d6\'c1\'f6\'b8\'b8
+\f1  
+\f2 \'c5\'ab
+\f1  
+\f2 \'c2\'f7\'c0\'cc\'c1\'a1\'c0\'cc
+\f1  
+\f2 \'c0\'d6\'b4\'d9
+\f1 . \
+
+\f2 \'c0\'da\'bc\'bc\'c7\'d1
+\f1  
+\f2 \'b0\'b3\'b3\'e4\'c0\'bb
+\f1  
+\f2 \'c0\'cc\'c7\'d8\'c7\'cf\'c1\'f6
+\f1  
+\f2 \'b8\'f8\'c7\'df\'b4\'d9
+\f1 .\
+
+\f2 \'b0\'b3\'b3\'e4
+\f1  
+\f2 \'c1\'a4\'b8\'ae\'b8\'a6
+\f1  
+\f2 \'c7\'cf\'b0\'c5\'b3\'aa
+\f1  
+\f2 \'be\'cb\'be\'c6\'ba\'c1\'be\'df\'c7\'d2
+\f1  
+\f2 \'b5\'ed\
+Join\
+}
